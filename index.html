@@ -4,6 +4,17 @@
         <title></title>
     </head>
     <body>
+        <input type="text" id="input" />
+
         <script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+
+        <script type="text/javascript">
+            let data = {
+                message: "Hello World"
+            };
+
+            document.querySelector("#input").value = data.message;
+        
+        </script>
     </body>
 </html>
