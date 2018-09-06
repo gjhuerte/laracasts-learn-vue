@@ -21,13 +21,15 @@
                 el: "#root",
                 data: {
                     names: ['Joe', 'Mary', 'Jane', 'Jack']
-                }
-            });
+                },
 
-            document.querySelector('#button').addEventListener('click', () => {
-                let name = document.querySelector('#input');
-                app.names.push(name.value);
-                name.value = '';
+                mounted() {
+                    document.querySelector('#button').addEventListener('click', () => {
+                        let name = document.querySelector('#input');
+                        app.names.push(name.value);
+                        name.value = '';
+                    });
+                },
             });
         </script>
     </body>
